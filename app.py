@@ -33,7 +33,8 @@ def load_model_and_tokenizer():
     except Exception as e:
         st.error(f"Error loading model or tokenizer: {e}")
         st.stop()
-
+        
+st.info("Loading model… first run may take up to 30 seconds.")
 tokenizer, loaded_model = load_model_and_tokenizer()
 
 # --- Prediction Function ---
