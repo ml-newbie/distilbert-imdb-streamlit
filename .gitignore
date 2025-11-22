@@ -1,0 +1,9 @@
+imdb_distilbert_model/
+venv/
+notebooks/
+__pycache__/
+app_v01.py
+app_v02.py
+test.py
+.DS_Store
+*.pyc

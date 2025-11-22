@@ -1,0 +1,6 @@
+tensorflow==2.19.0
+transformers==4.57.1
+streamlit==1.51.0
+numpy
+sentencepiece
+gdown==5.2.0
