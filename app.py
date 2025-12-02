@@ -67,8 +67,13 @@ def predict_sentiment(text):
 # --- Streamlit UI ---
 
 # Title
+st.set_page_config(page_title="Multimodal Product Search", layout="wide")
 st.markdown(
     "<h2 style='text-align:center; font-size:30px; color: darkblue;'>🎬 DistilBERT IMDB Sentiment Analysis 🎬</h2>",
+    unsafe_allow_html=True
+)
+st.markdown(
+    '<p style="font-size:10px; color:gray; text-align:left;">© 2025 John Merwin. All rights reserved.</p>',
     unsafe_allow_html=True
 )
 st.markdown("<p style='text-align:center; font-size:16px;'>Enter a movie review below to get its sentiment prediction.</p>", unsafe_allow_html=True)
