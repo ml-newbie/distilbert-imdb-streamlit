@@ -69,7 +69,7 @@ def predict_sentiment(text):
 # Title
 st.set_page_config(page_title="DistilBERT Movie Sentiment Analysis", layout="wide")
 st.markdown(
-    "<h2 style='text-align:center; font-size:30px; color: darkblue;'>🎬 DistilBERT IMDB Sentiment Analysis 🎬</h2>",
+    "<h2 style='text-align:center; font-size:30px; color: darkblue;'>🎬 DistilBERT Movie Sentiment Analysis 🎬</h2>",
     unsafe_allow_html=True
 )
 st.markdown(
