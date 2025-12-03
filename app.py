@@ -67,7 +67,7 @@ def predict_sentiment(text):
 # --- Streamlit UI ---
 
 # Title
-st.set_page_config(page_title="DistilBERT IMDB Sentiment Analysis", layout="wide")
+st.set_page_config(page_title="DistilBERT Movie Sentiment Analysis", layout="wide")
 st.markdown(
     "<h2 style='text-align:center; font-size:30px; color: darkblue;'>🎬 DistilBERT IMDB Sentiment Analysis 🎬</h2>",
     unsafe_allow_html=True
@@ -92,7 +92,7 @@ if st.button("Analyze Sentiment"):
     else:
         with st.spinner("Analyzing..."):
             score = predict_sentiment(user_input)
-
+            # st.write(f"Score: {score:.2f}")
             col1, col2 = st.columns([2, 1])
 
             with col1:
@@ -113,7 +113,4 @@ if st.button("Analyze Sentiment"):
                 "<p style='font-size:14px;'>Score > 0.5 → Positive sentiment, Score ≤ 0.5 → Negative sentiment</p>",
                 unsafe_allow_html=True
             )
-            st.markdown(
-                "<p style='font-size:12px;'>Created by John Merwin</p>",
-                unsafe_allow_html=True
-            )
+           
